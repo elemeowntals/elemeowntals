@@ -6,7 +6,6 @@ use App\Facades\Settings;
 use App\Models\Character\Character;
 use App\Models\Currency\Currency;
 use App\Models\Criteria\Criterion;
-use Settings;
 use Config;
 use Auth;
 use View;
@@ -17,11 +16,7 @@ use App\Models\Gallery\GallerySubmission;
 use App\Models\Prompt\Prompt;
 use App\Models\User\User;
 use App\Models\Comment;
-use App\Models\Gallery\GalleryCriterion;
 use App\Services\GalleryManager;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\View;
 
 class GalleryController extends Controller {
     /*
