@@ -125,6 +125,7 @@ Route::group(['prefix' => 'character', 'namespace' => 'Characters'], function ()
     Route::get('{slug}/profile/edit', 'CharacterController@getEditCharacterProfile');
     Route::post('{slug}/profile/edit', 'CharacterController@postEditCharacterProfile');
 
+    Route::post('{slug}/awardcase/edit', 'CharacterController@postAwardEdit');
     Route::post('{slug}/inventory/edit', 'CharacterController@postInventoryEdit');
 
     Route::post('{slug}/bank/transfer', 'CharacterController@postCurrencyTransfer');
@@ -269,6 +270,7 @@ Route::group(['prefix' => 'rewards'], function () {
 });
 
 /**************************************************************************************************
+<<<<<<< HEAD
     Criteria
 **************************************************************************************************/
 Route::group(['prefix' => 'criteria'], function () {
@@ -276,4 +278,14 @@ Route::group(['prefix' => 'criteria'], function () {
     Route::get('{entity}/{id}/{entity_id}/{form_id}', 'CriterionController@getCriterionForm')->where('entity', 'prompt|gallery');
     Route::get('{id}', 'CriterionController@getCriterionFormLimited');
     Route::post('rewards/{id}', 'CriterionController@postCriterionRewards');
+=======
+    Awards
+**************************************************************************************************/
+Route::group(['prefix' => 'awardcase', 'namespace' => 'Users'], function () {
+    Route::get('/', 'AwardCaseController@getIndex');
+    Route::post('edit', 'AwardCaseController@postEdit');
+    Route::post('claim/{id}', 'AwardCaseController@postClaimAward');
+
+    Route::get('selector', 'AwardCaseController@getSelector');
+>>>>>>> 40be4500926bd20fa25eba88c404ad41d4b6944a
 });
