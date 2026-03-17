@@ -236,10 +236,20 @@ Route::group(['prefix' => 'designs', 'namespace' => 'Characters'], function () {
 /**************************************************************************************************
     Shops
 **************************************************************************************************/
-
 Route::group(['prefix' => 'shops'], function () {
     Route::post('buy', 'ShopController@postBuy');
     Route::get('history', 'ShopController@getPurchaseHistory');
+});
+
+/**************************************************************************************************
+    Dailies
+**************************************************************************************************/
+
+Route::group(['prefix' => __('dailies.dailies')], function () {
+    // throtle requests to 1 per ~10 seconds
+    Route::middleware('throttle:1,0.16')->group(function () {
+        Route::post('{id}', 'DailyController@postRoll');
+    });
 });
 
 /**************************************************************************************************
