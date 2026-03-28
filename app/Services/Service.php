@@ -163,7 +163,7 @@ abstract class Service {
         if ($user->isStaff) {
             // If staff rewards are enabled, check if the action
             // is eligible for a reward, and if so, grant it
-            if (config('lorekeeper.extensions.staff_rewards.enabled')) {
+            if (!config('lorekeeper.extensions.staff_rewards.enabled')) {
                 // Ensure that the user only receives rewards for the action once
                 if (!AdminLog::where('user_id', $user->id)->where('action', $action)->where('action_details', $action_details)->exists()) {
                     // Fetch all configured actions
