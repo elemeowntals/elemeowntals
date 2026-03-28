@@ -31,7 +31,7 @@ return [
      *  Trait Modals addition - Moif
      */
     'visual_trait_index' => [
-        'enable_species_index'   => 0, // Enables the Species Trait Index
+        'enable_species_index'   => 1, // Enables the Species Trait Index
         'enable_subtype_index'   => 0, // Enables the Subtype Trait Index
         'enable_universal_index' => 0, // Enables the Universal Trait Index
         'enable_all_trait_index' => 0, // Enables the All Traits Index
@@ -39,10 +39,10 @@ return [
     ],
 
     // Character Status Badges - Juni
-    'character_status_badges' => 0,
+    'character_status_badges' => 1,
 
     // Character TH Profile Link - Juni
-    'character_TH_profile_link' => 0,
+    'character_TH_profile_link' => 1,
 
     // Design Update Voting - Mercury
     'design_update_voting' => 0,
@@ -58,7 +58,7 @@ return [
     ],
 
     // Group Traits By Category - Uri
-    'traits_by_category' => 0,
+    'traits_by_category' => 1,
 
     // Scroll To Top - Uri
     'scroll_to_top' => 0, // 1 - On, 0 - off
@@ -85,7 +85,7 @@ return [
 
     // Staff Rewards - Mercury
     'staff_rewards' => [
-        'enabled'     => 0,
+        'enabled'     => 1,
         'currency_id' => 1,
     ],
 
@@ -103,8 +103,8 @@ return [
     // Previous & Next buttons on Character pages - Speedy
     // Adds buttons linking to the previous character as well as the next character on all character pages.
     'previous_and_next_characters' => [
-        'display' => 0,
-        'reverse' => 0, // By default, 0 has the lower number on the 'Next' side and the higher number on the 'Previous' side, reflecting the default masterlist order. Setting this to 1 reverses this.
+        'display' => 1,
+        'reverse' => 1, // By default, 0 has the lower number on the 'Next' side and the higher number on the 'Previous' side, reflecting the default masterlist order. Setting this to 1 reverses this.
     ],
 
     // Aliases on Userpage - Speedy
@@ -132,13 +132,13 @@ return [
 
     // Show Small Badges on the User's Characters/MYO Slots Page
     // Indicating Trading Status (and Gift Art & Gift Writing Status)
-    'badges_on_user_character_page' => 0,
+    'badges_on_user_character_page' => 1,
 
     // Allow users to return a pending design update to drafts, for instance if they make a mistake. - Uri
     'design_return_to_draft' => 1,
 
     // Multiple Subtypes - Newt
-    'exclusionary_search'    => 0, // If enabled, searching for multiple subtypes will only return results that have all of the subtypes specified. If disabled, it will return results that have any of the subtypes specified.
+    'exclusionary_search'    => 1, // If enabled, searching for multiple subtypes will only return results that have all of the subtypes specified. If disabled, it will return results that have any of the subtypes specified.
     'multiple_subtype_limit' => 10, // The maximum number of subtypes a character can have.
 
     // TinyMCE Code Editor - Moif

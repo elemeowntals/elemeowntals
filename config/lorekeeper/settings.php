@@ -36,7 +36,7 @@ return [
     | site wherever the name needs to be displayed.
     |
     */
-    'site_name'                                         => 'Lorekeeper',
+    'site_name'                                         => 'Elemeowntals',
 
     /*
     |--------------------------------------------------------------------------
@@ -129,7 +129,7 @@ return [
     */
     'character_codes'                                   => '{category}-{number}',
     'character_number_digits'                           => 3,
-    'character_pull_number'                             => 'all',
+    'character_pull_number'                             => 'category',
 
     'reset_character_status_on_transfer'                => 0,
     'reset_character_profile_on_transfer'               => 0,
@@ -184,7 +184,7 @@ return [
     | 'masterlist_fullsizes_format' => null,
     |
     */
-    'store_masterlist_fullsizes'                        => 0,
+    'store_masterlist_fullsizes'                        => 1,
     'masterlist_fullsizes_cap'                          => 0,
     'masterlist_fullsizes_format'                       => null,
 
