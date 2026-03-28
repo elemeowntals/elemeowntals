@@ -6,7 +6,8 @@
 
 @section('admin-content')
     {!! breadcrumbs(['Admin Panel' => 'admin', 'Staff Reward Settings' => 'admin/staff-reward-settings']) !!}
-    @if (config('lorekeeper.extensions.staff_rewards.enabled'))
+
+    @if (!config('lorekeeper.extensions.staff_rewards.enabled'))
         <div class="alert alert-danger">
             Staff rewards are currently disabled. Enable them in the Lorekeeper configuration files to use this feature.
         </div>
